@@ -1,0 +1,144 @@
+\thusetup{
+  %******************************
+  % 注意：
+  %   1. 配置里面不要出现空行
+  %   2. 不需要的配置信息可以删除
+  %******************************
+  %
+  %=====
+  % 秘级
+  %=====
+  secretlevel={秘密},
+  secretyear={10},
+  %
+  %=========
+  % 中文信息
+  %=========
+  ctitle={基于柔性LED阵列的创新产品的研究},
+  cdegree={工学硕士},
+  cdepartment={计算机科学与技术系},
+  cmajor={计算机科学与技术},
+  cauthor={张庭梁},
+  csupervisor={郑纬民教授},
+  cassosupervisor={陈文光教授}, % 副指导老师
+  ccosupervisor={某某某教授}, % 联合指导老师
+  % 日期自动使用当前时间，若需指定按如下方式修改：
+  % cdate={超新星纪元},
+  %
+  % 博士后专有部分
+  cfirstdiscipline={计算机科学与技术},
+  cseconddiscipline={系统结构},
+  postdoctordate={2009年7月——2011年7月},
+  id={编号}, % 可以留空： id={},
+  udc={UDC}, % 可以留空
+  catalognumber={分类号}, % 可以留空
+  %
+  %=========
+  % 英文信息
+  %=========
+  etitle={An Introduction to \LaTeX{} Thesis Template of Tsinghua University v\version},
+  % 这块比较复杂，需要分情况讨论：
+  % 1. 学术型硕士
+  %    edegree：必须为Master of Arts或Master of Science（注意大小写）
+  %             “哲学、文学、历史学、法学、教育学、艺术学门类，公共管理学科
+  %              填写Master of Arts，其它填写Master of Science”
+  %    emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+  % 2. 专业型硕士
+  %    edegree：“填写专业学位英文名称全称”
+  %    emajor：“工程硕士填写工程领域，其它专业学位不填写此项”
+  % 3. 学术型博士
+  %    edegree：Doctor of Philosophy（注意大小写）
+  %    emajor：“获得一级学科授权的学科填写一级学科名称，其它填写二级学科名称”
+  % 4. 专业型博士
+  %    edegree：“填写专业学位英文名称全称”
+  %    emajor：不填写此项
+  edegree={Doctor of Engineering},
+  emajor={Computer Science and Technology},
+  eauthor={Xue Ruini},
+  esupervisor={Professor Zheng Weimin},
+  eassosupervisor={Chen Wenguang},
+  % 日期自动生成，若需指定按如下方式修改：
+  % edate={December, 2005}
+  %
+  % 关键词用“英文逗号”分割
+  ckeywords={LED, 柔性电路, 脑机接口, 穿戴式设备},
+  ekeywords={LED, Flexible circuit, Brain interface, Wearable device}
+}
+
+% 定义中英文摘要和关键字
+\begin{cabstract}
+本项目提出了一种可靠的柔性LED的制作方案，并提出了数个柔性LED应用场景，预计能拉动LED产能以及促进LED时装、灯光秀等新兴产业的发展。
+
+国内柔性LED技术尚处于起步阶段，本项目提出了一种可靠的柔性LED制作方案，并提出了一多新的艺术表达形式。
+
+初步柔性LED解决方案拟采用Adafruit LED Sequins以及LILYPAD，使用编织线包裹的铜导线连接，焊盘经过特殊处理使其在机洗等恶劣环境下不易脱落，整个系统较为分散，从而使其能够嵌入到织物之中。同时尝试新型材料，如导电热塑性塑料等，进一步提高可靠性，并开拓新的艺术表现形式。
+
+之后将分为以下几个应用场景进行开发：（不限于以下提出的应用场景）
+
+{\heiti 应用场景1：脑电控制的交互式RGB-LED点阵穿戴式设备 }
+
+通过检测脑电信号，将使用者的心情以Emoji等形式在休闲帽等穿戴式设备上用柔性LED阵列显示，从而达到交互的目的。
+
+同时，穿戴式设备上的图案可以自定义，作为一种现代化的自我表达形式。还可以借助其他模块实现类似的附加功能，如：心率+呼吸+体温检测等。
+
+由于柔性电路耐水洗且可靠，可以直接使用洗衣机清洗，做到了无负担的使用体验。相对于其他嵌入式的穿戴设备优势明显，消费者认同感较高。
+
+相关技术：
+TGAM脑电模块模块可以处理并输出脑波频率谱，脑电信号质量，原始脑电波和三个Neurosky的eSense参数：专注度，放松度和眨眼侦测。由于能耗小且和人体的界面只需一个简单的干接触点，所以可以适合运用于柔性穿戴式设备中。
+
+{\heiti 应用场景2：用于摄影行业的柔性LED平板 }
+
+目前，摄影界普遍应用的摄影垫，制作工艺往往是LED灯带平铺在柔性材料上面，可靠性和成本低廉不可兼得，且色调单一。若应用柔性LED制作照明平板，不仅可靠性大大提升，而且柔性LED良好的性能可以实现更多的应用，如制作高尼特的球形光源等。
+
+另外，对于个人用户的diy摄影创作，单一色源以及照射方式的摄影补光难以满足需求。柔性led照明设施能够很好地达到一种补光光源个性化定制的的效果。
+
+
+  本文的创新点主要有：
+  \begin{itemize}
+    \item 将传统PCB电路移植到柔性基底上；
+    \item 方便个性化定制的可穿戴设备的制作；
+    \item 使用脑机接口开发Emoji控制。
+  \end{itemize}
+
+\end{cabstract}
+
+% 如果习惯关键字跟在摘要文字后面，可以用直接命令来设置，如下：
+% \ckeywords{\TeX, \LaTeX, CJK, 模板, 论文}
+
+\begin{eabstract}
+This project proposes a reliable flexible LED production solution, and proposes several flexible LED application scenarios, which are expected to drive LED production capacity and promote the development of emerging industries such as LED fashion and lighting show.
+
+Domestic flexible LED technology is still in its infancy. This project proposes a reliable flexible LED production solution and proposes a new form of artistic expression.
+
+The initial flexible LED solution is intended to use Adafruit LED Sequins and LILYPAD, which are connected by copper wires wrapped in braided wires. The pads are specially treated to make them difficult to fall off under harsh environments such as machine wash, and the whole system is dispersed so that it can be embedded. Among the fabrics. At the same time try new materials, such as conductive thermoplastics, to further improve reliability and open up new forms of artistic expression.
+
+It will be divided into the following application scenarios for development: (not limited to the application scenarios presented below)
+
+{\heiti Application Scenario 1: Interactive RGB-LED dot matrix wearable device for EEG control }
+
+By detecting the EEG signal, the user's mood is displayed in a flexible LED array on a wearable device such as a casual hat in the form of Emoji, thereby achieving the purpose of interaction.
+
+At the same time, the patterns on the wearable device can be customized as a modern form of self-expression. Similar additional features can be implemented with other modules, such as heart rate + breathing + body temperature detection.
+
+Since the flexible circuit is washable and reliable, it can be directly cleaned using a washing machine, and the unburdened user experience is achieved. Compared with other embedded wearable devices, the advantages of consumers are higher.
+
+Related technology:
+The TGAM EEG module can process and output brainwave frequency spectra, EEG signal quality, original brainwaves and three Neurosky eSense parameters: concentration, relaxation and blink detection. Due to its low energy consumption and a simple dry contact point with the human body interface, it can be adapted for use in flexible wearable devices.
+
+{\heiti Application Scenario 2: Flexible LED Panel for the Photography Industry }
+
+At present, the photographic mats commonly used in the photography industry are often made by tiling LED strips on flexible materials, with low reliability and low cost, and a single color tone. If the flexible LED is used to make the lighting panel, not only the reliability is greatly improved, but also the good performance of the flexible LED can realize more applications, such as making a spherical light source of the Gonit.
+
+In addition, for individual users of diy photography creation, single color source and illumination mode photography fill light is difficult to meet the demand. Flexible led lighting facilities can achieve a personalized custom effect of the fill light source.
+
+
+  The main innovations of this paper are:
+  \begin{itemize}
+    \item porting traditional PCB circuits to flexible substrates;
+    \item facilitates the production of personalized custom wearable devices;
+    \item uses the brain-computer interface to develop Emoji controls.
+  \end{itemize}
+  
+\end{eabstract}
+
+% \ekeywords{\TeX, \LaTeX, CJK, template, thesis}

@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {第1章}项目背景}{1}{chapter.1}
+\contentsline {chapter}{\numberline {第2章}研究计划}{2}{chapter.2}
+\contentsline {chapter}{\numberline {第3章}类似产品分析}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Embroidered Computer——刺绣计算机}{3}{section.3.1}
+\contentsline {section}{\numberline {3.2}PIX}{4}{section.3.2}
+\contentsline {section}{\numberline {3.3}e-broidery}{5}{section.3.3}
+\contentsline {chapter}{\numberline {第4章}技术方案及具体实现}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}元件选型}{6}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}WS2812(LilyPad Pixel)}{6}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}FLORA}{11}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}TGAM脑电模块}{13}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}工艺探索}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}线材}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}焊盘}{18}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}整体电路与布料/衣物的整合}{20}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}整体整合}{20}{section.4.3}
+\contentsline {chapter}{\numberline {第5章}展望}{21}{chapter.5}
+\contentsline {chapter}{插图索引}{22}{section*.27}
+\contentsline {chapter}{表格索引}{23}{section*.29}
+\contentsline {chapter}{公式索引}{24}{section*.31}
+\contentsline {chapter}{参考文献}{25}{section*.33}
